@@ -1,0 +1,398 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"col",
+				"color"
+			],
+			[
+				"fon",
+				"font-style"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "resources/views/welcome.blade.php",
+			"settings":
+			{
+				"buffer_size": 2659,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 354.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"sublime",
+				"SublimeLinter: Show Errors on Save"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"updat",
+				"Package Control: Upgrade/Overwrite All Packages"
+			],
+			[
+				"sublimelinter",
+				"SublimeLinter: Report (Open Files)"
+			],
+			[
+				"sublimelinter tooltip",
+				"SublimeLinter: Choose Tooltip Theme"
+			],
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: list",
+				"Package Control: List Packages"
+			],
+			[
+				"php",
+				"Set Syntax: PHP"
+			],
+			[
+				"list",
+				"Set Syntax: Literate Haskell"
+			],
+			[
+				"to",
+				"SublimeLinter: Toggle Linter"
+			],
+			[
+				"togle",
+				"SublimeLinter: Toggle Linter"
+			],
+			[
+				"show",
+				"SublimeLinter: Show All Errors"
+			],
+			[
+				"li",
+				"Package Control: List Packages"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 639.0
+	},
+	"console":
+	{
+		"height": 404.0,
+		"history":
+		[
+			"phpcs",
+			"echo ${folder}/vendor/bin/phpcs",
+			"${folder}/vendor/bin/phpcs",
+			"phpcs -v",
+			"phpcs",
+			"show",
+			"show menu;",
+			"show menu",
+			"import urllib.request,os,hashlib; h = '6f4c264a24d933ce70df5dedcf1dcaee' + 'ebe013ee18cced0ef93d5f746d80ef60'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/rafael/projetos/bestprice",
+		"/home/rafael/projetos/bestprice/app",
+		"/home/rafael/projetos/bestprice/app/Http",
+		"/home/rafael/projetos/bestprice/config",
+		"/home/rafael/projetos/bestprice/resources",
+		"/home/rafael/projetos/bestprice/resources/views",
+		"/home/rafael/projetos/bestprice/routes"
+	],
+	"file_history":
+	[
+		"/home/rafael/projetos/bestprice/vendor/laravel/framework/src/Illuminate/Auth/Middleware/Authenticate.php",
+		"/home/rafael/projetos/bestprice/vendor/laravel/framework/src/Illuminate/Auth/Middleware/Authorize.php",
+		"/home/rafael/projetos/bestprice/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php",
+		"/home/rafael/projetos/bestprice/vendor/laravel/framework/src/Illuminate/Auth/Access/Gate.php",
+		"/home/rafael/projetos/bestprice/vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php",
+		"/home/rafael/projetos/bestprice/vendor/laravel/framework/src/Illuminate/Routing/Router.php",
+		"/home/rafael/projetos/bestprice/vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php",
+		"/home/rafael/projetos/bestprice/app/Http/Middleware/TrustProxies.php",
+		"/home/rafael/projetos/bestprice/vendor/fideloper/proxy/src/TrustProxies.php",
+		"/home/rafael/projetos/bestprice/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php",
+		"/home/rafael/projetos/bestprice/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ConvertEmptyStringsToNull.php",
+		"/home/rafael/projetos/bestprice/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/CheckForMaintenanceMode.php",
+		"/home/rafael/projetos/bestprice/app/Http/Middleware/TrimStrings.php",
+		"/home/rafael/projetos/bestprice/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TrimStrings.php",
+		"/home/rafael/projetos/bestprice/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ValidatePostSize.php",
+		"/home/rafael/projetos/bestprice/vendor/laravel/framework/src/Illuminate/Routing/Route.php",
+		"/home/rafael/projetos/bestprice/routes/web.php",
+		"/home/rafael/projetos/bestprice/resources/views/welcome.blade.php",
+		"/home/rafael/projetos/bestprice/.env",
+		"/home/rafael/projetos/bestprice/app/User.php",
+		"/home/rafael/projetos/bestprice/bestprice.sublime-project",
+		"/usr/local/bin/phpcs",
+		"/home/rafael/.bash_aliases",
+		"/home/rafael/.config/sublime-text-3/Packages/SublimeLinter-phpcs/linter.py",
+		"/home/rafael/.config/sublime-text-3/Packages/SublimeLinter/sublimelinter.py",
+		"/home/rafael/.config/sublime-text-3/Packages/SublimeLinter/SublimeLinter.sublime-settings",
+		"/home/rafael/.ambientum_rc",
+		"/home/rafael/projetos/bestprice/composer.json",
+		"/home/rafael/.config/sublime-text-3/Backup/20180106194023/SublimeLinter/linter-plugin-template/.sublimelinterrc",
+		"/home/rafael/.sublimelinterrc",
+		"/home/rafael/.config/sublime-text-3/Packages/User/Package Control.sublime-settings",
+		"/home/rafael/.config/sublime-text-3/Packages/User/SublimeLinter (old).sublime-settings",
+		"/home/rafael/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
+		"/home/rafael/.config/sublime-text-3/Packages/User/Package Control.last-run",
+		"/home/rafael/.config/sublime-text-3/Packages/User/Default (Linux).sublime-keymap",
+		"/home/rafael/.config/sublime-text-3/Packages/User/PHP Companion.sublime-settings",
+		"/home/rafael/.config/sublime-text-3/Packages/SublimeLinter/README.md",
+		"/home/rafael/.config/sublime-text-3/Packages/SublimeLinter/LICENSE",
+		"/home/rafael/.config/sublime-text-3/Packages/SublimeLinter/.sublimelinterrc",
+		"/home/rafael/projetos/bestprice/.sublimelinterrc",
+		"/home/rafael/projetos/bestprice/docker-compose.yml",
+		"/home/rafael/.bashrc",
+		"/home/rafael/.cache/ambientum/.composer/cache/.htaccess",
+		"/home/rafael/.config/sublime-text-3/Packages/Default/Default (Linux).sublime-keymap",
+		"/home/rafael/.config/sublime-text-3/Packages/Package Control/Package Control.sublime-settings",
+		"/home/rafael/projetos/bestprice/app/Providers/BroadcastServiceProvider.php",
+		"/home/rafael/.config/composer/vendor/squizlabs/php_codesniffer/CodeSniffer.php",
+		"/home/rafael/projetos/bestprice/app/Providers/EventServiceProvider.php",
+		"/home/rafael/projetos/bestprice/app/Providers/AppServiceProvider.php",
+		"/home/rafael/.config/sublime-text-3/Packages/PHP Companion/PHP Companion.sublime-settings",
+		"/etc/apache2/apache2.conf",
+		"/home/rafael/projetos/bestprice/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php",
+		"/snap/README",
+		"/var/www/html/bestprice/.env",
+		"/snap/spotify/5/bin/desktop-launch",
+		"/var/www/html/info.php",
+		"/etc/init.d/apache2",
+		"/var/log/bootstrap.log",
+		"/var/log/boot.log",
+		"/etc/apache2/conf-available/other-vhosts-access-log.conf",
+		"/home/rafael/.wget-hsts",
+		"/home/rafael/.xsession-errors",
+		"/var/www/html/index.html",
+		"/home/rafael/.config/sublime-text-3/Packages/Default/Preferences.sublime-settings",
+		"/home/rafael/Desktop/import urllib.request,os,hashlib; h = '6f4c264a24d",
+		"/home/rafael/script.sh",
+		"/etc/apt/apt.conf.d/01autoremove-kernels",
+		"/etc/apt/apt.conf.d/01autoremove",
+		"/etc/apt/sources.list.d/spotify.list",
+		"/etc/apt/sources.list",
+		"/etc/apt/trusted.gpg",
+		"/tmp/config-err-CbLN1x"
+	],
+	"find":
+	{
+		"height": 70.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"Name",
+			"documentation",
+			"Laravel",
+			"rm",
+			"on_close_async",
+			"remove",
+			"exec",
+			"tempfile",
+			"tempdir",
+			"cmd",
+			"cms"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "resources/views/welcome.blade.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2659,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2659,
+								2659
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1837.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 31.0
+	},
+	"input":
+	{
+		"height": 69.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.SublimeLinter":
+	{
+		"height": 174.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "bestprice.sublime-project",
+	"replace":
+	{
+		"height": 58.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				".env"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 276.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

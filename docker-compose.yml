@@ -1,0 +1,87 @@
+####
+# ATENCAO:
+# Troque todas as ocorrencias de "sandbox" com o nome do seu projeto
+####
+
+# sintaxe v2 do docker-compose
+version: '2'
+
+# Volumes (para que os dados nao se percam)
+volumes:
+  # Dados do Postgres
+  # remova se voce nao for usar postgres
+  bestprice-postgres-data:
+    driver: local
+
+  # Dados do MySQL
+  # remova se voce nao for usar mysql
+  bestprice-mysql-data:
+    driver: local
+
+  # Dados do Redis
+  # remova se nao for usar redis
+  bestprice-redis-data:
+    driver: local
+
+services:
+  # Postgres (9.5)
+  postgres:
+    image: ambientum/postgres:9.6
+    container_name: bestprice-postgres
+    volumes:
+      - bestprice-postgres-data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_PASSWORD=bestprice
+      - POSTGRES_DB=bestprice
+      - POSTGRES_USER=bestprice
+
+  # MySQL (5.7)
+  mysql:
+    image: ambientum/mysql:5.7
+    container_name: bestprice-mysql
+    volumes:
+      - bestprice-mysql-data:/var/lib/mysql
+    ports:
+      - "3306:3306"
+    environment:
+      - MYSQL_ROOT_PASSWORD=bestprice
+      - MYSQL_DATABASE=bestprice
+      - MYSQL_USER=bestprice
+      - MYSQL_PASSWORD=bestprice
+
+  # Redis
+  cache:
+    image: ambientum/redis:3.2
+    container_name: bestprice-redis
+    command: --appendonly yes
+    volumes:
+      - bestprice-redis-data:/data
+    ports:
+      - "6379:6379"
+
+  # PHP (com Caddy)
+  # voce pode mudar de caddy para nginx ou apache, basta trocar a sessao 'image'
+  app:
+    image: ambientum/php:7.0-caddy
+    container_name: bestprice-app
+    volumes:
+      - .:/var/www/app
+    ports:
+      - "80:8080"
+    links:
+      - postgres
+      - mysql
+      - cache
+
+  # Laravel Queues
+  queue:
+    image: ambientum/php:7.0
+    container_name: bestprice-queue
+    command: php artisan queue:listen
+    volumes:
+      - .:/var/www/app
+    links:
+      - mysql
+      - cache
