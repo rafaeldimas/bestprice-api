@@ -1,6 +1,6 @@
 <?php
 
-namespace BestPrice;
+namespace BestPrice\Domains\Users;
 
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;

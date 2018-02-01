@@ -67,7 +67,7 @@ return [
     'providers' => [
         'users' => [
             'driver' => 'eloquent',
-            'model' => BestPrice\User::class,
+            'model' => BestPrice\Domains\Users\User::class,
         ],
 
         // 'users' => [

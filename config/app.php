@@ -168,6 +168,14 @@ return [
          * Package Service Providers...
          */
 
+        Migrator\MigrationServiceProvider::class,
+
+        /**
+         * Domains Service Providers
+         */
+
+        BestPrice\Domains\Users\Database\Providers\DomainServiceProvider::class,
+
         /*
          * Application Service Providers...
          */

@@ -8,11 +8,6 @@ version: '2'
 
 # Volumes (para que os dados nao se percam)
 volumes:
-  # Dados do Postgres
-  # remova se voce nao for usar postgres
-  bestprice-postgres-data:
-    driver: local
-
   # Dados do MySQL
   # remova se voce nao for usar mysql
   bestprice-mysql-data:
@@ -24,19 +19,6 @@ volumes:
     driver: local
 
 services:
-  # Postgres (9.5)
-  postgres:
-    image: ambientum/postgres:9.6
-    container_name: bestprice-postgres
-    volumes:
-      - bestprice-postgres-data:/var/lib/postgresql/data
-    ports:
-      - "5432:5432"
-    environment:
-      - POSTGRES_PASSWORD=bestprice
-      - POSTGRES_DB=bestprice
-      - POSTGRES_USER=bestprice
-
   # MySQL (5.7)
   mysql:
     image: ambientum/mysql:5.7
@@ -71,7 +53,6 @@ services:
     ports:
       - "80:8080"
     links:
-      - postgres
       - mysql
       - cache
 
