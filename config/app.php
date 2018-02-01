@@ -177,13 +177,9 @@ return [
         BestPrice\Domains\Users\Database\Providers\DomainServiceProvider::class,
 
         /*
-         * Application Service Providers...
+         * Units Service Providers...
          */
-        BestPrice\Providers\AppServiceProvider::class,
-        BestPrice\Providers\AuthServiceProvider::class,
-        // BestPrice\Providers\BroadcastServiceProvider::class,
-        BestPrice\Providers\EventServiceProvider::class,
-        BestPrice\Providers\RouteServiceProvider::class,
+        \BestPrice\Units\Authentication\Providers\UnitsServiceProvider::class,
 
     ],
 

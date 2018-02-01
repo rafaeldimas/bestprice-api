@@ -1,6 +1,6 @@
 <?php
 
-namespace BestPrice\Http\Middleware;
+namespace BestPrice\Units\Core\Http\Middleware;
 
 use Illuminate\Http\Request;
 use Fideloper\Proxy\TrustProxies as Middleware;

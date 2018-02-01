@@ -1,6 +1,6 @@
 <?php
 
-namespace BestPrice\Providers;
+namespace BestPrice\Units\Authentication\Providers;
 
 use Illuminate\Support\Facades\Gate;
 use Illuminate\Foundation\Support\Providers\AuthServiceProvider as ServiceProvider;
