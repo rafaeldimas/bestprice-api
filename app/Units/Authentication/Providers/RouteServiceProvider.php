@@ -2,6 +2,7 @@
 
 namespace BestPrice\Units\Authentication\Providers;
 
+use BestPrice\Units\Authentication\Http\Routes\Api;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvider;
 
@@ -47,9 +48,9 @@ class RouteServiceProvider extends ServiceProvider
      */
     protected function mapApiRoutes()
     {
-        Route::prefix('api')
-             ->middleware('api')
-             ->namespace($this->namespace)
-             ->group(__DIR__.'/../Http/routes.php');
+        (new Api([
+            'middleware' => 'api',
+            'namespace' => $this->namespace,
+        ]))->register();
     }
 }

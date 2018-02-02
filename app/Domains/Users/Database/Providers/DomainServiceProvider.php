@@ -2,6 +2,7 @@
 
 namespace BestPrice\Domains\Users\Database\Providers;
 
+use BestPrice\Domains\Users\Database\Factories\UserFactory;
 use BestPrice\Domains\Users\Database\Migrations\CreatePasswordResetsTable;
 use BestPrice\Domains\Users\Database\Migrations\CreateUsersTable;
 use Migrator\MigratorTrait as HasMigrations;
@@ -17,6 +18,7 @@ class DomainServiceProvider extends ServiceProvider
     public function register()
     {
         $this->registerMigrations();
+        $this->registerFactories();
     }
 
     protected function registerMigrations()
@@ -25,5 +27,10 @@ class DomainServiceProvider extends ServiceProvider
             CreateUsersTable::class,
             CreatePasswordResetsTable::class,
         ]);
+    }
+
+    protected function registerFactories()
+    {
+        (new UserFactory())->define();
     }
 }
