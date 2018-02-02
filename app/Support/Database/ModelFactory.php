@@ -41,7 +41,7 @@ abstract class ModelFactory
     public function define()
     {
         $this->factory->define($this->model, function () {
-            $this->fields();
+            return $this->fields();
         });
     }
 

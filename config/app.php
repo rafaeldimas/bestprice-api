@@ -174,7 +174,7 @@ return [
          * Domains Service Providers
          */
 
-        BestPrice\Domains\Users\Database\Providers\DomainServiceProvider::class,
+        BestPrice\Domains\Users\Providers\DomainServiceProvider::class,
 
         /*
          * Units Service Providers...

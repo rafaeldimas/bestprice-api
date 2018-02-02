@@ -14,12 +14,10 @@ class UserFactory extends ModelFactory
      */
     protected function fields()
     {
-        static $password;
-
         return [
             'name' => $this->faker->name,
             'email' => $this->faker->unique()->safeEmail,
-            'password' => $password ?: $password = bcrypt('secret'),
+            'password' => bcrypt('secret'),
             'remember_token' => str_random(10),
         ];
     }
