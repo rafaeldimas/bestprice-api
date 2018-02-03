@@ -91,7 +91,7 @@ return [
     |
     */
 
-    'fallback_locale' => 'pt-br',
+    'fallback_locale' => 'en',
 
     /*
     |--------------------------------------------------------------------------
@@ -169,6 +169,7 @@ return [
          */
 
         Migrator\MigrationServiceProvider::class,
+        Tymon\JWTAuth\Providers\LaravelServiceProvider::class,
 
         /**
          * Domains Service Providers
@@ -179,7 +180,7 @@ return [
         /*
          * Units Service Providers...
          */
-        \BestPrice\Units\Authentication\Providers\UnitsServiceProvider::class,
+        BestPrice\Units\Authentication\Providers\UnitsServiceProvider::class,
 
     ],
 

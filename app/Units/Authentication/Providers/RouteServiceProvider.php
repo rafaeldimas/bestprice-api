@@ -3,7 +3,6 @@
 namespace BestPrice\Units\Authentication\Providers;
 
 use BestPrice\Units\Authentication\Http\Routes\Api;
-use Illuminate\Support\Facades\Route;
 use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvider;
 
 class RouteServiceProvider extends ServiceProvider
