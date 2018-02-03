@@ -19,6 +19,7 @@ class HttpKernel extends Kernel
         \BestPrice\Units\Core\Http\Middleware\TrimStrings::class,
         \Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull::class,
         \BestPrice\Units\Core\Http\Middleware\TrustProxies::class,
+        \BestPrice\Units\Core\Http\Middleware\AlwaysExpectsJson::class,
     ];
 
     /**
