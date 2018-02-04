@@ -1,9 +1,11 @@
 <?php
 
-namespace BestPrice\Http\Controllers\Auth;
+namespace BestPrice\Units\Authentication\Http\Controllers;
 
-use BestPrice\Http\Controllers\Controller;
+use BestPrice\Support\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\ResetsPasswords;
+use Illuminate\Http\Request;
+use Illuminate\Http\Response;
 
 class ResetPasswordController extends Controller
 {
@@ -28,12 +30,70 @@ class ResetPasswordController extends Controller
     protected $redirectTo = '/home';
 
     /**
-     * Create a new controller instance.
+     * Get the password reset validation rules.
      *
-     * @return void
+     * @return array
      */
-    public function __construct()
+    protected function rules()
     {
-        $this->middleware('guest');
+        return [
+            'token' => 'required',
+            'email' => 'required|email',
+            'password' => 'required|min:6',
+        ];
+    }
+
+    /**
+     * Get the password reset credentials from the request.
+     *
+     * @param Request $request
+     * @return array
+     */
+    protected function credentials(Request $request)
+    {
+        $credentials = $request->only(
+            'email', 'password', 'token'
+        );
+
+        return array_merge($credentials, [
+            'password_confirmation' => $credentials['password'],
+        ]);
+    }
+
+    /**
+     * Get the response for a successful password reset.
+     *
+     * @param  string  $response
+     * @return \Illuminate\Http\RedirectResponse|\Illuminate\Http\JsonResponse
+     */
+    protected function sendResetResponse($response)
+    {
+        $token = null;
+
+        try {
+            $user = $this->guard()->user();
+            $token = app('tymon.jwt.auth')->fromUser($user);
+        } catch (\Exception $e) {
+            throw new \Exception('Coult not Generate Token');
+        }
+
+        return response()->json([
+            'status' => trans($response),
+            'token' => "Bearer $token",
+        ], Response::HTTP_OK);
+    }
+
+    /**
+     * Get the response for a failed password reset.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  string  $response
+     * @return \Illuminate\Http\RedirectResponse|\Illuminate\Http\JsonResponse
+     */
+    protected function sendResetFailedResponse(Request $request, $response)
+    {
+        return response()->json([
+            'error' => trans($response),
+        ], Response::HTTP_INTERNAL_SERVER_ERROR);
     }
 }

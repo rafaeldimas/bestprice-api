@@ -32,7 +32,15 @@ class Api extends RoutesFile
 
     protected function registerRoutesAuth()
     {
-        $this->router->post('login', 'LoginController@login');
-        $this->router->post('register', 'RegisterController@register');
+
+        $this->router->group([
+            'middleware' => 'guest',
+            'except' => 'logout',
+        ], function () {
+            $this->router->post('login', 'LoginController@login');
+            $this->router->post('register', 'RegisterController@register');
+            $this->router->post('password/email', 'ForgotPasswordController@sendResetLinkEmail');
+            $this->router->post('password/reset', 'ResetPasswordController@reset');
+        });
     }
 }
