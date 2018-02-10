@@ -19,6 +19,14 @@ volumes:
     driver: local
 
 services:
+  nginx-proxy:
+    image: jwilder/nginx-proxy
+    container_name: bestprice-proxy
+    ports:
+      - "80:80"
+    volumes:
+      - /var/run/docker.sock:/tmp/docker.sock:ro
+
   # MySQL (5.7)
   mysql:
     image: ambientum/mysql:5.7
@@ -48,6 +56,8 @@ services:
   app:
     image: ambientum/php:7.0-caddy
     container_name: bestprice-app
+    environment:
+      - VIRTUAL_HOST=api.bestprice.abc
     volumes:
       - .:/var/www/app
     ports:
