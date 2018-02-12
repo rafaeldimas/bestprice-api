@@ -32,7 +32,7 @@ abstract class ModelFactory
     public function __construct()
     {
         $this->factory = app()->make(Factory::class);
-        $this->faker= app()->make(Generator::class);
+        $this->faker = app()->make(Generator::class);
     }
 
     /**
